@@ -1,0 +1,145 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-size: 24px;
+}
+
+.navbar-nav {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.jumbotron {
+  padding-top: 100px;
+  padding-bottom: 75px;
+  background-color: #c7ddff;
+}
+
+.jumbotron img {
+  background-size: cover;
+  width: 200px;
+}
+
+.jumbotron .display-4 {
+  font-size: 30px;
+}
+
+.jumbotron .lead {
+  font-size: 18px;
+}
+
+.about-me .text {
+  font-size: 18px;
+}
+
+.my-projects {
+  background-color: #c7ddff;
+  padding-bottom: 50px;
+}
+
+.my-skill {
+  padding-bottom: 50px;
+}
+
+.my-skill .container .item {
+  /* background-color: yellow; */
+  width: 175px;
+  margin-bottom: 30px;
+  /* margin: 10px; */
+}
+
+.my-skill img {
+  width: 100px;
+}
+
+.contact {
+  background-color: #c7ddff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.my-projects img {
+  /* width: 500px; */
+  height: 250px;
+}
+
+.judul-project {
+  font-weight: 400;
+}
+
+.quote {
+  width: 300px;
+  margin: auto;
+}
+
+.text-quote {
+  font-weight: 100;
+}
+
+footer {
+  padding-top: 50px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-brand {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 24px;
+  }
+
+  .navbar-nav {
+    font-size: 18px;
+  }
+
+  .navbar-nav li:hover {
+    border-bottom: 3px solid rgb(19, 17, 17);
+    margin-top: -3px;
+  }
+
+  .jumbotron img {
+    width: 250px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .jumbotron .lead {
+    font-size: 24px;
+  }
+
+  .about-me .text {
+    font-size: 24px;
+  }
+
+  .my-projects img {
+    /* width: 500px; */
+    height: 285px;
+  }
+
+  .my-skill .container .item {
+    /* background-color: yellow; */
+    width: 300px;
+    /* margin: 10px; */
+    margin-bottom: 50px;
+  }
+
+  .my-skill img {
+    width: 150px;
+  }
+
+  .image-skill {
+    width: 250px;
+  }
+
+  .quote {
+    width: 800px;
+    margin: auto;
+  }
+}
