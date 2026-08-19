@@ -23,6 +23,11 @@ html {
   width: 200px;
 }
 
+/* Foto jumbotron responsive */
+.foto-jumbotron {
+  width: 150px;
+}
+
 .jumbotron .display-4 {
   font-size: 30px;
 }
@@ -40,19 +45,23 @@ html {
   padding-bottom: 50px;
 }
 
-.my-skill {
+.techstack {
   padding-bottom: 50px;
 }
 
-.my-skill .container .item {
+.techstack .container .item {
   /* background-color: yellow; */
   width: 175px;
   margin-bottom: 30px;
   /* margin: 10px; */
 }
 
-.my-skill img {
+.techstack img {
   width: 100px;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact {
@@ -105,6 +114,11 @@ footer {
     width: 250px;
   }
 
+  /* Foto jumbotron responsive - Desktop */
+  .foto-jumbotron {
+    width: 200px;
+  }
+
   .jumbotron .display-4 {
     font-size: 36px;
     font-weight: 400;
@@ -123,15 +137,19 @@ footer {
     height: 285px;
   }
 
-  .my-skill .container .item {
+  .techstack .container .item {
     /* background-color: yellow; */
     width: 300px;
     /* margin: 10px; */
     margin-bottom: 50px;
   }
 
-  .my-skill img {
+  .techstack img {
     width: 150px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
   .image-skill {
