@@ -1,10 +1,70 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+@media (max-width: 991px) {
+  html {
+    scroll-padding-top: 120px;
+  }
 }
 
 .navbar-brand {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 24px;
+}
+
+/* Hamburger to X animation */
+.navbar-toggler {
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+  bottom: -8px;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .navbar-nav {
@@ -50,22 +110,18 @@ html {
 }
 
 .techstack .container .item {
-  /* background-color: yellow; */
-  width: 175px;
   margin-bottom: 30px;
-  /* margin: 10px; */
 }
 
-.techstack img {
-  width: 100px;
+.techstack img.tech-icon {
+  max-width: 80px;
   height: auto;
-  max-width: 100%;
   display: block;
-  margin: 0 auto;
 }
 
-.contact {
+.my-notes {
   background-color: #c7ddff;
+  padding-bottom: 30px;
 }
 
 section {
@@ -73,8 +129,24 @@ section {
 }
 
 .my-projects img {
-  /* width: 500px; */
-  height: 250px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.my-projects .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.my-projects .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-projects .card-text {
+  flex: 1;
 }
 
 .judul-project {
@@ -138,18 +210,13 @@ footer {
   }
 
   .techstack .container .item {
-    /* background-color: yellow; */
-    width: 300px;
-    /* margin: 10px; */
     margin-bottom: 50px;
   }
 
-  .techstack img {
-    width: 150px;
-    height: auto;
+  .techstack img.tech-icon {
     max-width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto;
   }
 
   .image-skill {

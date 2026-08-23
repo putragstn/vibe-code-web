@@ -32,6 +32,16 @@ function changeImageCard3() {
 }
 
 // Panggil fungsi changeImage untuk mengubah gambar setiap beberapa detik
-setInterval(changeImageCard1, 4000); // Ubah gambar pada card-1 setiap 4 detik (4000 milidetik)
-setInterval(changeImageCard2, 3000); // Ubah gambar pada card-2 setiap 3 detik (3000 milidetik)
-setInterval(changeImageCard3, 5000); // Ubah gambar pada card-2 setiap 5 detik (5000 milidetik)
+let interval1 = setInterval(changeImageCard1, 4000); // Ubah gambar pada card-1 setiap 4 detik (4000 milidetik)
+let interval2 = setInterval(changeImageCard2, 3000); // Ubah gambar pada card-2 setiap 3 detik (3000 milidetik)
+let interval3 = setInterval(changeImageCard3, 5000); // Ubah gambar pada card-2 setiap 5 detik (5000 milidetik)
+
+// Pause carousel on hover
+cardImage1.closest('.card').addEventListener('mouseenter', () => clearInterval(interval1));
+cardImage1.closest('.card').addEventListener('mouseleave', () => interval1 = setInterval(changeImageCard1, 4000));
+
+cardImage2.closest('.card').addEventListener('mouseenter', () => clearInterval(interval2));
+cardImage2.closest('.card').addEventListener('mouseleave', () => interval2 = setInterval(changeImageCard2, 3000));
+
+cardImage3.closest('.card').addEventListener('mouseenter', () => clearInterval(interval3));
+cardImage3.closest('.card').addEventListener('mouseleave', () => interval3 = setInterval(changeImageCard3, 5000));
